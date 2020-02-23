@@ -5,8 +5,10 @@
 .ele-root {
     width: 80%;
     align-self: center;
+    margin: 5px 0;
 }
 .form-submit {
     width: 40%;
     align-self: center;
+    margin-bottom: 20px;
 }

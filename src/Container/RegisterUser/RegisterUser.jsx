@@ -26,7 +26,6 @@ class RegisterUser extends React.Component {
     onFormSubmit = (event) => {
         event.preventDefault();
         if(this.validateForm()) {
-            console.log('values', this.state);
             let users = localStorage.getItem('users') ? JSON.parse(localStorage.getItem('users')) : []; 
             users.push({
                 firstName: this.state.firstName,
@@ -58,8 +57,7 @@ class RegisterUser extends React.Component {
                                 checked={this.state.gender === "M"} onChange={(event) => this.onValueChange(event, "GN")}/>Male</label>                        
                             <label><input type="radio" id="female" name="gender" value="F"
                                 checked={this.state.gender === "F"} onChange={(event) => this.onValueChange(event, "GN")}/>Female</label>                        
-                        </label>
-                        
+                        </label>                        
                         <button className="form-submit" type="submit">Submit form</button>
                     </form>
                 </div>
