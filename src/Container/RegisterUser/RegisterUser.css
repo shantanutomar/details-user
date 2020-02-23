@@ -1,0 +1,12 @@
+.form-root {
+    display: flex;
+    flex-direction: column;
+}
+.ele-root {
+    width: 80%;
+    align-self: center;
+}
+.form-submit {
+    width: 40%;
+    align-self: center;
+}
